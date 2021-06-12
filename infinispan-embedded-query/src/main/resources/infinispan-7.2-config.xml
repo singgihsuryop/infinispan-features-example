@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infinispan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:infinispan:config:7.2 http://www.infinispan.org/schemas/infinispan-config-7.2.xsd"
+	xmlns="urn:infinispan:config:7.2">
+
+	<jgroups>
+		<stack-file name="udp" path="jgroups-2.8-udp-ispn7.2.xml" />
+	</jgroups>
+
+	<cache-container default-cache="default" statistics="true">
+		<transport stack="udp" cluster="SSP-ISPN" node-name="node-name-ssp"
+			machine="mechine-ssp" rack="rack-ssp" site="site-ssp" />
+		<jmx domain="Infinispan-7.2" />
+
+		<!-- <distributed-cache name="stockTickers" mode="SYNC"> -->
+		<!-- <locking isolation="REPEATABLE_READ" striping="false"/> -->
+		<!-- </distributed-cache> -->
+		<replicated-cache name="personCache" mode="SYNC">
+			<!-- <locking isolation="REPEATABLE_READ" acquire-timeout="500"/> -->
+			<!-- <eviction max-entries="500" /> -->
+			<!-- <expiration interval="100"/> -->
+			<!-- <store-as-binary keys="true" values="true"/> -->
+		</replicated-cache>
+		<replicated-cache name="itemCache" mode="SYNC">
+		</replicated-cache>
+		<!-- <replicated-cache name="another" mode="ASYNC" queue-size="100"> -->
+		<!-- <expiration lifespan="1000" max-idle="500"/> -->
+		<!-- </replicated-cache> -->
+	</cache-container>
+
+</infinispan>

@@ -1,0 +1,17 @@
+infinispan-embedded-simpleoperation/
+├── pom.xml
+└── src
+    └── main
+        ├── java
+        │   └── com
+        │       └── collectionsofcode
+        │           └── infinispan
+        │               └── embedded
+        │                   └── simpleoperation
+        │                       ├── InstanceApp.java
+        │                       ├── Person.java
+        │                       └── PutValueToCacheApp.java
+        └── resources
+            ├── infinispan-7.2-config.xml
+            └── jgroups-2.8-udp.xml
+

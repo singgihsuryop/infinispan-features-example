@@ -1,0 +1,19 @@
+├── pom.xml
+├── src
+│   └── main
+│       ├── java
+│       │   └── com
+│       │       └── singgihsuryop
+│       │           └── infinispan
+│       │               └── embedded
+│       │                   └── mapreduce
+│       │                       ├── Item.java
+│       │                       ├── ItemInventory.java
+│       │                       ├── MasterNodeApp.java
+│       │                       ├── MyCollator.java
+│       │                       ├── MyMapper.java
+│       │                       ├── MyReducer.java
+│       │                       └── SlaveNodeApp.java
+│       └── resources
+│           ├── infinispan-7.2-config.xml
+│           └── jgroups-2.8-udp.xml

@@ -1,0 +1,12 @@
+package quickstart;
+
+/* @Indexed */
+message Person {
+	
+	/* @IndexedField */
+	required String id = 1;
+	/* @IndexedField */
+	required String name = 2;
+	/* @IndexedField */
+	required int32 age = 3;
+}

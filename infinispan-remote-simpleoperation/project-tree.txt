@@ -1,0 +1,18 @@
+├── pom.xml
+├── src
+│   └── main
+│       ├── java
+│       │   └── com
+│       │       └── singgihsuryop
+│       │           └── infinispan
+│       │               └── remote
+│       │                   └── simpleoperation
+│       │                       ├── ClearAllCache.java
+│       │                       ├── MonitorCacheSize.java
+│       │                       ├── Person.java
+│       │                       ├── PutValueToCache.java
+│       │                       ├── PutValueToCacheThread.java
+│       │                       └── ShowAllCacheValues.java
+│       └── resources
+│           └── quickstart
+│               └── person.proto

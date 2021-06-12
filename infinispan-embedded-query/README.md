@@ -1,0 +1,1 @@
+# infinispan-embedded-query
